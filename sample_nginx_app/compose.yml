@@ -1,0 +1,9 @@
+services:
+  app:
+    image: test-nginx
+    volumes:
+      - type: bind
+        source: ./
+        target: /usr/share/nginx/html
+    ports:
+      - "8000:80"
